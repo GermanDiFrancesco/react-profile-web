@@ -1,0 +1,36 @@
+.to-do-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #111;
+}
+.to-do-item-p-incompleted{
+    margin: 0;
+    text-decoration: none;
+    color: #fafafa;
+}   
+
+.to-do-item-p-completed{
+    margin: 0;
+    text-decoration: line-through;
+    color: #444;
+    
+}
+.to-do-item-check{
+    font-size: smaller;
+    font-weight: 700;
+    padding: 4px;
+    color: rgb(77, 172, 94);
+    cursor: pointer;
+}
+.to-do-item-delete{
+    font-size: smaller;
+    font-weight: 800;
+    padding: 4px;
+    color: rgb(194, 86, 86);
+    cursor: pointer;
+}
