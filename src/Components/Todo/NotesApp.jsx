@@ -1,17 +1,18 @@
 import React from 'react'
-import { ToDoCounter } from './Components/ToDoCounter'
-import { ToDoSearch } from './Components/ToDoSearch'
-import { ToDoList } from './Components/ToDoList'
-import { ToDoItem } from './Components/ToDoItem'
-import { CreateToDo } from './Components/CreateToDo'
-import './App.css'
+import { ToDoCounter } from './Components/ToDoCounter';
+import { ToDoSearch } from './Components/ToDoSearch';
+import { ToDoList } from './Components/ToDoList';
+import { ToDoItem } from './Components/ToDoItem';
+import { CreateToDo } from './Components/CreateToDo';
+import './App.css';
 
 const defaultTodos = [
   {text:'Cortar cebolla', state:'completed'},
   {text:'aprender react', state:'incompleted'},
   {text:'hacer un to do list', state:'incompleted'}
 ]
-function App() {
+
+function NotesApp() {
   const [toDos, setToDos] = React.useState(defaultTodos);
 
   const [searchValue, setSearchValue] = React.useState('');
@@ -49,4 +50,4 @@ function App() {
   )
 }
 
-export default App
+export default NotesApp

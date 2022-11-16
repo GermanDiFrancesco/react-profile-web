@@ -11,11 +11,11 @@ function ToDoItem(props) {
 
   return (
     <li className='to-do-item'>
-        <span onClick={markCompleted} className='to-do-item-delete'>Delete</span>
+        <span onClick={deleteToDo} className='to-do-item-delete'>Delete</span>
         <p className={`to-do-item-p-${props.state}`}>
             {props.text}
         </p>
-        <span onClick={deleteToDo} className='to-do-item-check'>Done</span>
+        <span onClick={markCompleted} className='to-do-item-check'>Done</span>
     </li>
     
 )}

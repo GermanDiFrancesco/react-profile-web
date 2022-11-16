@@ -1,0 +1,73 @@
+:root {
+    --hexa-black: #1e1e1e;
+    --hexa-white: #eeeeee;
+    --hexa-fucsia: #74364A;
+    --hexa-cyan: #9BD2C9;
+    --hexa-green: #33AF4E;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: var(--hexa-white);
+    border-bottom: 2px solid var(--hexa-black);
+    margin-bottom: 1rem;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo-container .logo{
+    height: 36px;
+    filter: invert();
+}
+.name{
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-right: 2rem;
+    font-weight:bold;
+
+}
+
+nav>.home {
+    border-bottom: 3px solid var(--hexa-black);
+}
+
+nav>.about {
+    border-bottom: 3px solid var(--hexa-fucsia);
+}
+
+nav>.portafolio {
+    border-bottom: 3px solid var(--hexa-green);
+}
+
+nav>.contact {
+    border-bottom: 3px solid var(--hexa-fucsia);
+}
+
+
+@media (max-width: 450px) {
+    .name{
+        display: none;
+    }
+
+}

@@ -1,0 +1,27 @@
+.main-portafolio {
+    padding: 3rem 4rem;
+}
+
+.portafolio-section {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.item{
+    padding: 10px;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0px #555
+
+}
+.item .header{
+    padding: 0 10px;
+    background: #fafafa;
+    border-bottom: 2px solid #555;
+}
+
+.item .content{
+    padding: 5px;
+    color: #555;
+}
